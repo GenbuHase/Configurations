@@ -1,0 +1,39 @@
+{
+  "private": true,
+
+  "type": "commonjs",
+  "name": "@genbuhase/configurations",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "長谷 玄武 (Genbu Hase)",
+  "license": "MIT",
+
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test_js && npm run test_ts && npm run test_vue",
+    "test_js": "eslint -c eslint.config.js.mjs tests/test.js",
+    "test_ts": "eslint -c eslint.config.ts.mjs tests/test.ts",
+    "test_vue": "eslint -c eslint.config.vue.mjs tests/Test.vue"
+  },
+
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@nuxt/eslint-config": "^1.12.1",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.6.2",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4",
+    "typescript-eslint": "^8.50.1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GenbuHase/Configurations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GenbuHase/Configurations/issues"
+  },
+  "homepage": "https://github.com/GenbuHase/Configurations#readme"
+}
