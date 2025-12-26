@@ -1,7 +1,7 @@
 <template>
-  <div v-if="true"></div>
+	<div v-if="true"></div>
 </template>
 
 <script setup lang="ts">
-  const unused = "variable";
+	const unused = "variable";
 </script>

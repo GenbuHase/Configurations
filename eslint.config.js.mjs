@@ -6,18 +6,18 @@ import globals from "globals";
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
-    eslint.configs.recommended,
+	eslint.configs.recommended,
 
-    {
-        files: ["**/*.{js,mjs,cjs}"],
-        
-        languageOptions: {
-            globals: {
-                ...globals.browser,
-                ...globals.node,
-            },
-        },
-    },
+	{
+		files: ["**/*.{js,mjs,cjs}"],
 
-    prettier,
+		languageOptions: {
+			globals: {
+				...globals.browser,
+				...globals.node
+			}
+		}
+	},
+
+	prettier
 ];

@@ -8,28 +8,28 @@ import tseslint from "typescript-eslint";
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
-    eslint.configs.recommended,
-    ...tseslint.configs.recommended,
-    ...pluginVue.configs["flat/recommended"],
+	eslint.configs.recommended,
+	...tseslint.configs.recommended,
+	...pluginVue.configs["flat/recommended"],
 
-    {
-        files: ["**/*.vue"],
+	{
+		files: ["**/*.vue"],
 
-        languageOptions: {
-            parserOptions: {
-                parser: tseslint.parser,
-            },
-        },
-    },
+		languageOptions: {
+			parserOptions: {
+				parser: tseslint.parser
+			}
+		}
+	},
 
-    {
-        languageOptions: {
-            globals: {
-                ...globals.browser,
-                ...globals.node,
-            },
-        },
-    },
+	{
+		languageOptions: {
+			globals: {
+				...globals.browser,
+				...globals.node
+			}
+		}
+	},
 
-    prettier,
-]
+	prettier
+];

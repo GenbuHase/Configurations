@@ -7,19 +7,19 @@ import tseslint from "typescript-eslint";
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
-    eslint.configs.recommended,
-    ...tseslint.configs.recommended,
+	eslint.configs.recommended,
+	...tseslint.configs.recommended,
 
-    {
-        files: ["**/*.{ts,mts,cts,tsx}"],
+	{
+		files: ["**/*.{ts,mts,cts,tsx}"],
 
-        languageOptions: {
-            globals: {
-                ...globals.browser,
-                ...globals.node,
-            },
-        },
-    },
+		languageOptions: {
+			globals: {
+				...globals.browser,
+				...globals.node
+			}
+		}
+	},
 
-    prettier,
-]
+	prettier
+];

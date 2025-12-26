@@ -9,8 +9,8 @@ import prettier from "eslint-config-prettier";
 */
 
 export default createConfigForNuxt({
-    features: {
-        tooling: true,
-        stylistic: true,
-    },
+	features: {
+		tooling: true,
+		stylistic: true
+	}
 }).prepend(prettier);
